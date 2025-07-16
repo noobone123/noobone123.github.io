@@ -1,10 +1,15 @@
 /* Fonts */
 :root {
-    --font-monospace: "Fira Mono", monospace;
+    /* 【自定义】原来是等宽字体 "Fira Mono", monospace */
+    /* 【自定义】现在改为现代的无衬线字体，提升阅读体验 */
+    --font-family-base: 'Inter', 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    --font-monospace: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', 'Monaco', monospace;
 }
 
 body {
-    font-family: var(--font-monospace);
+    /* 【自定义】原来使用 var(--font-monospace) 等宽字体 */
+    /* 【自定义】现在使用 var(--font-family-base) 无衬线字体 */
+    font-family: var(--font-family-base);
     font-size: 16px;
     line-height: 1.5rem;
 }

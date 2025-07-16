@@ -1,1 +1,350 @@
 /* Override this file to customise the theme's CSS for your site */
+
+/* 【自定义】标题大小设置 - 让 h1 和 h2 有不同的大小 */
+h1 {
+    font-size: 1.3rem !important; /* h1 最大，适合页面标题 */
+    font-weight: 700 !important;
+    margin-top: 1.5rem !important;
+    margin-bottom: 0.75rem !important;
+}
+
+/* 【自定义】侧边栏标题样式 - 覆盖通用 h1 样式 */
+.about__title {
+    font-size: 1.2rem !important; /* 侧边栏标题稍小 */
+    font-weight: 800 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    color: var(--fg) !important; /* 使用主题默认颜色 */
+}
+
+h2 {
+    font-size: 1rem !important; /* h2 中等大小，适合章节标题 */
+    font-weight: 650 !important;
+    margin-top: 1.8rem !important;
+    margin-bottom: 0.8rem !important;
+}
+
+/* h3-h6 保持默认的 1rem 大小 */
+
+/* 【自定义】确保代码块保持等宽字体 */
+code, pre, kbd, samp, .highlight {
+    font-family: var(--font-monospace) !important;
+}
+
+/* 【自定义】改善整体可读性 */
+p {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+/* 【自定义】链接样式优化 - 去掉下划线 */
+a {
+    color: #2dd3f0;
+    text-decoration: none !important; /* 去掉下划线 */
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #3282eb;
+    text-decoration: none !important; /* 悬停时也不显示下划线 */
+}
+
+/* 【自定义】列表样式优化 - 增加层级间距 */
+ul, ol {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* 【自定义】增加1级列表到2级列表之间的间距 */
+li > ul,
+li > ol {
+    margin-top: 0.4rem !important; /* 1级到2级列表的间距 */
+    margin-bottom: 0.6rem !important;
+}
+
+/* 【自定义】2级列表项的间距 */
+li ul li,
+li ol li {
+    margin-bottom: 0.2rem !important; /* 2级列表项之间的间距稍小 */
+    margin-top: 0.2rem !important;
+}
+
+/* 【自定义】强调文本样式 */
+strong {
+    font-weight: 600;
+}
+
+/* 【自定义】改善代码块样式 */
+pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 1rem;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+/* 【自定义】内联代码样式 */
+code {
+    background-color: #f8f9fa;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+/* 【自定义】改善表格样式 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1rem 0;
+}
+
+th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+}
+
+th {
+    font-weight: 600;
+    background-color: #f8f9fa;
+}
+
+/* 【自定义】颜色工具类 - 在 Markdown 中使用 */
+.text-red {
+    color: #f25b5b !important;
+}
+
+.text-blue {
+    color: #2563eb !important;
+}
+
+.text-purple {
+    color: #9333ea !important;
+}
+
+.text-orange {
+    color: #ea580c !important;
+}
+
+.text-gray {
+    color: #6b7280 !important;
+}
+
+.text-pink {
+    color: #db2777 !important;
+}
+
+/* 【自定义】背景颜色工具类 */
+.bg-red {
+    background-color: #fef2f2 !important;
+    color: #dc2626 !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+.bg-green {
+    background-color: #f0fdf4 !important;
+    color: #16a34a !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+.bg-blue {
+    background-color: #eff6ff !important;
+    color: #2563eb !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+.bg-yellow {
+    background-color: #fefce8 !important;
+    color: #ca8a04 !important;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+}
+
+/* 【自定义】文本样式工具类 */
+.text-bold-blue {
+    font-weight: 700 !important;
+    color: #4882ff !important;
+}
+
+/* 【自定义】文本样式工具类 */
+.text-bold-italic {
+    font-weight: 700 !important;
+    font-style: italic !important;
+}
+
+.text-h1-title {
+    color: #53cd53 !important;
+}
+
+.text-paper {
+    color: #e8cc7a !important;
+    font-weight: 700 !important;
+}
+
+.text-author {
+    color: #f1aa7d !important;
+    font-style: italic !important;
+    text-decoration: underline !important;
+}
+
+.text-italic {
+    font-style: italic !important;
+}
+
+.text-underline {
+    text-decoration: underline !important;
+}
+
+.text-large {
+    font-size: 1.2em !important;
+}
+
+.text-small {
+    font-size: 0.9em !important;
+}
+
+/* 【自定义】特殊样式工具类 */
+.highlight-box {
+    background-color: #fef3c7;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.info-box {
+    background-color: #eff6ff;
+    border-left: 4px solid #3b82f6;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+.warning-box {
+    background-color: #fef2f2;
+    border-left: 4px solid #ef4444;
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 4px;
+}
+
+/* 【自定义】页面标题样式 - 保留原始终端风格，只调整高度和居中 */
+.page__logo {
+    text-align: center !important; /* 水平居中 */
+    padding: 0 !important;
+    margin: 0 !important;
+    font-weight: inherit !important;
+    color: var(--bg) !important;
+}
+
+.page__logo:before {
+    content: none !important;
+}
+
+.page__logo-inner {
+    display: inline-block !important; /* 改为inline-block以便居中 */
+    background: var(--logo) !important; /* 保留原始背景色 */
+    opacity: 0.90 !important;
+    padding: 0.35rem 0.6rem !important; /* 增加水平padding，给终端符号更多空间 */
+    line-height: 1.2 !important; /* 确保垂直居中 */
+    vertical-align: middle !important; /* 垂直居中 */
+    
+    /* 【自定义】终端风格字体设置 */
+    font-family: var(--font-monospace) !important; /* 使用等宽字体 */
+    font-weight: 800 !important; /* 加粗 */
+    font-size: 1.2rem !important; /* 适当的字体大小 */
+    letter-spacing: 0.01em !important; /* 稍微增加字符间距，更有终端感 */
+    text-transform: none !important; /* 保持原始大小写 */
+}
+
+/* 【自定义】确保终端装饰符号也使用等宽字体 */
+.page__logo-inner:before,
+.page__logo-inner:after {
+    font-family: var(--font-monospace) !important;
+    font-weight: 700 !important;
+}
+
+/* 【自定义】链接样式 - 确保终端标题悬停时不改变背景 */
+a.page__logo-inner:link, a.page__logo-inner:visited {
+    color: inherit !important;
+    text-decoration: inherit !important;
+}
+
+a.page__logo-inner:hover,
+a.page__logo-inner:active {
+    opacity: 1 !important;
+    /* 【自定义】不添加背景色变化，保持终端风格 */
+    background: var(--logo) !important;
+    color: inherit !important;
+}
+
+/* 【自定义】保留原始终端风格装饰，但确保居中 */
+.page__logo-inner:before {
+    content: "[~ " !important;
+    color: var(--bg) !important;
+}
+
+.page__logo-inner:after {
+    content: " ]$" !important;
+    color: var(--bg) !important;
+}
+
+/* 【自定义】确保导航栏样式协调 */
+.page__nav {
+    background: var(--bg) !important;
+    padding: 1rem 0 !important;
+}
+
+.main-nav__item {
+    margin-left: 1rem !important;
+}
+
+/* 【自定义】News样式 - 红色加粗的新闻提示 */
+.news-item {
+    color: #dc2626 !important;
+    font-weight: 700 !important;
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+/* 【自定义】导航菜单样式 - 字体、大小、颜色 */
+.main-nav li {
+    text-transform: none !important; /* 保持原始大小写 */
+    font-family: var(--font-monospace) !important; /* 使用等宽字体，保持终端风格 */
+    font-size: 0.9rem !important; /* 菜单项字体大小 */
+    font-weight: 700 !important; /* 中等加粗 */
+}
+
+/* 【自定义】菜单链接样式 - 只影响菜单项，不影响终端标题 */
+.main-nav a:not(.page__logo-inner) {
+    color: #49b6ff !important; /* 蓝色链接 */
+    text-decoration: none !important;
+    padding: 0.4rem 0.2rem !important; /* 增加点击区域 */
+    border-radius: 3px !important; /* 圆角 */
+    transition: all 0.2s ease !important; /* 平滑过渡 */
+    font-family: var(--font-monospace) !important; /* 等宽字体 */
+}
+
+/* 【自定义】菜单项悬停效果 - 只影响菜单项 */
+.main-nav a:not(.page__logo-inner):hover {
+    color: #ffffff !important; /* 悬停时白色文字 */
+    background-color: #0278ff !important; /* 悬停时背景颜色 */
+    transform: translateY(-1px) !important; /* 轻微向上移动 */
+}
+
+/* 【自定义】菜单项标记符号样式 */
+.main-nav li::marker {
+    content: "./" !important;
+    color: #49b6ff !important; /* 蓝色标记 */
+    font-family: var(--font-monospace) !important; /* 等宽字体 */
+    font-weight: 700 !important; /* 加粗标记 */
+}
