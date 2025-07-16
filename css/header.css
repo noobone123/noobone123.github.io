@@ -13,6 +13,10 @@
     text-transform: lowercase;
 }
 
+.main-nav li.nomarker {
+    text-transform: none;
+}
+
 .main-nav li::marker {
     content: "./";
 }
